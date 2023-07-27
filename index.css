@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: #322653;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* ---------------MENU---------------- */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 10px;
+    height: 100vh;
+}
+
+#header .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 30%;
+    align-items: center;
+    font-weight: 900;
+}
+
+#header .menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+#header .menu li:hover, #header .menu li.active {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+
+/* ---------------INTRODUCTION----------------- */
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+#intro .image {
+    position: relative;
+    width: 475px;
+    height: 575px;
+}
+
+#intro .image img {
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#intro .image .card {
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+    border-bottom: 20px;
+}
+
+#intro .about {
+    width: 50vw;
+}
+
+#intro .about h1 {
+    font-size: 45px;
+    text-align: left;
+    margin: 0;
+}
+
+#intro .about p {
+    width: 70%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ---------------INFORMATION----------------- */
+
+#information {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#information h1 {
+    font-size: 45px;
+}
+
+#information .main-info {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+#information .personal, #information .skill {
+    width: 40%;
+}
+
+#information .skill-item {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#information .skill-item img {
+    height: 50px;
+}
+
+#information .skill-item p {
+    margin: 0;
+}
+
+/* ---------------EXPERIENCE----------------- */
+
+#experience {
+    height: 100vh;
+}
+
+/* ---------------CONTACT----------------- */
+
+#contact {
+    height: 100vh;
+}
