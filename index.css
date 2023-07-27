@@ -100,6 +100,33 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#intro .download {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    width: 300px;
+}
+
+#intro .download p {
+    width: 200px;
+    font-weight: 900;
+}
+
+#intro .download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+#intro .download span {
+    font-size: 30px;
+}
 
 /* ---------------INFORMATION----------------- */
 
@@ -114,28 +141,27 @@ a {
     font-size: 45px;
 }
 
-#information .main-info {
+#information .skill {
     display: flex;
-    justify-content: space-evenly;
-    font-size: 23px;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
-}
-
-#information .personal, #information .skill {
-    width: 40%;
+    justify-content: space-evenly;
 }
 
 #information .skill-item {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 60%;
+    align-items: center;
     font-size: 40px;
     margin-bottom: 20px;
+    width: 25%;
+    height: 200px;
+    margin:10px;
 }
 
 #information .skill-item img {
-    height: 50px;
+    height: 150px;
 }
 
 #information .skill-item p {
@@ -146,10 +172,16 @@ a {
 
 #experience {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ---------------CONTACT----------------- */
 
 #contact {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
