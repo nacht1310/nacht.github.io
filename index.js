@@ -23,7 +23,12 @@ const checkActive = () => {
         var wP = $(window).scrollTop()
         var hT = $(element).offset().top
         var hB = $(element).outerHeight()
-        if(wP >= hT - 1 && wP <= hT + hB - 1) {
+        
+        if (wP >= $(document).height() - $(window).height() - 1) {
+            $('#contact-button').addClass('active')
+            $('#experience-button').removeClass('active')
+        }
+        else if(wP >= hT - 1 && wP <= hT + hB - 1) {
             $(`#${$(element).attr('id')}-button`).addClass('active')
         }
         else {
