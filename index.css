@@ -59,13 +59,13 @@ a {
 #intro .image {
     position: relative;
     width: 475px;
-    height: 575px;
+    height: 700px;
 }
 
 #intro .image img {
     position: absolute;
     width: 450px;
-    height: 550px;
+    height: 675px;
     top: 0;
     right: 0;
     z-index: 1;
@@ -171,10 +171,78 @@ a {
 /* ---------------EXPERIENCE----------------- */
 
 #experience {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+#experience h1 {
+    color: orange;
+    font-size: 45px;
+}
+
+#experience .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#experience .container img {
+    height: 100%;
+    width: 45%;
+}
+
+#experience .item {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 10px 0 10px 0;
+}
+
+#experience .item .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+#experience .title span {
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+
+#experience .title .line {
+    background-color: orange;
+    width: 2px;
+    height: 100%;
+}
+
+#experience .content {
+    line-height: 40px;
+    height: auto;
+}
+
+#experience .content h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+#experience .content ul {
+    list-style: none;
+    width: 80%;
+}
+
+#experience .content p, #experience .content li {
+    margin: 0;
+    font-size: 20px;
 }
 
 /* ---------------CONTACT----------------- */

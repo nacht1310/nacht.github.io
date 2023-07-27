@@ -26,7 +26,7 @@ const checkActive = () => {
         
         if (wP >= $(document).height() - $(window).height() - 1) {
             $('#contact-button').addClass('active')
-            $('#experience-button').removeClass('active')
+            $('#information-button').removeClass('active')
         }
         else if(wP >= hT - 1 && wP <= hT + hB - 1) {
             $(`#${$(element).attr('id')}-button`).addClass('active')
