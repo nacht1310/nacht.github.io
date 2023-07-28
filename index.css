@@ -216,6 +216,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 15%;
+    margin: 0 20px 0 0;
 }
 
 #experience .title span {
@@ -293,7 +294,7 @@ a {
         display: flex;
         flex-direction: column;
         margin: 0 0 20px 0;
-        width: 70vw;
+        width: 100%;
         align-items: center;
         text-align: center;
     }
@@ -362,6 +363,7 @@ a {
 
     #experience .item .title {
         width: 25%;
+        margin: 0;
     }
 
     #information .skill-item {
