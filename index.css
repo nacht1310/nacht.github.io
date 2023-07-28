@@ -131,10 +131,11 @@ a {
 /* ---------------INFORMATION----------------- */
 
 #information {
-    height: 110vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #information h1 {
@@ -206,6 +207,10 @@ a {
     margin: 10px 0 10px 0;
 }
 
+#experience .item.reverse {
+    flex-direction: row-reverse;
+}
+
 #experience .item .title {
     display: flex;
     flex-direction: column;
@@ -253,7 +258,7 @@ a {
     align-items: center;
     margin: 0px auto 30px auto;
     background-color: black;
-    height: 200px;
+    height: auto;
     width: 80%;
     border-radius: 40px;
     padding: 20px;
@@ -273,4 +278,42 @@ a {
 
 #contact .contact-info span {
     color: orange;
+}
+
+/*--------Responsive--------- */
+
+@media (max-width: 1100px) {
+    #intro {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+    }
+
+    #intro .about {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        width: 70vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro .about h1 {
+        text-align: center;
+    }
+
+
+    #experience {
+        height: auto;
+    }
+
+    #experience .item, #experience .item.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experience .container img {
+        width: 100%;
+    }
+
 }
